@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "Right Click Menu",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Creates menu shortcuts to prefill URLs based on selected text",
+    "description": "Description of the add-on."
+  }
+}
