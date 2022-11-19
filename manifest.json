@@ -14,14 +14,10 @@
     }
   ],
   "background": {
-    "scripts": ["./dist/background.js", "./public/ejs.min.js"
-    ]
+    "scripts": ["./dist/background.js", "./public/ejs.min.js"]
   },
-  "permissions": [
-    "menus",
-    "storage"
-  ],
-  "options_ui":{
+  "permissions": ["menus", "storage"],
+  "options_ui": {
     "page": "./dist/options.html",
     "browser_style": true,
     "chrome_style": true
