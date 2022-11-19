@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "default_locale": "en",
+  "version": "1.0",
+  "icons": {
+    "48": "./public/assets/mouse.svg",
+    "96": "./public/assets/mouse.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "scripts": ["./dist/background.js", "./public/ejs.min.js"
+    ]
+  },
+  "permissions": [
+    "menus",
+    "storage"
+  ],
+  "options_ui":{
+    "page": "./dist/options.html",
+    "browser_style": true,
+    "chrome_style": true
+  },
+  "applications": {
+    "gecko": {
+      "strict_min_version": "102.5.0"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "selection-query@chaim.codes"
+    }
+  }
+}
