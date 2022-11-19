@@ -1,9 +1,9 @@
 import MenuItem, {MenuItemType} from "../menu/MenuItem";
-import MenuCategory from "../menu/MenuCategory";
+import MenuCategory, {MenuCategoryType} from "../menu/MenuCategory";
 
 let generalCategoryId = "general"
 const menuCategories: Array<MenuCategory> = [
-    new MenuCategory(generalCategoryId, "General", null)
+    new MenuCategory(generalCategoryId, MenuCategoryType.CATEGORY,  "General", null)
 ]
 const menuItems: Array<MenuItem> = [
     new MenuItem(
@@ -35,4 +35,7 @@ const menuItems: Array<MenuItem> = [
         "https://github.com/londonbrown/selection-query"
     )
 ]
-export default menuItems
+export default {
+    menuCategories,
+    menuItems
+}
